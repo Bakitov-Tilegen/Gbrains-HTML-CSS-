@@ -1,90 +1,95 @@
 body{
-	width: 100%;
-	padding: 0;
+  width: 100%;
+  padding: 0;
 }
 
 .all{
- margin: 0 50px 0 50px;
- width:1280px;
- margin: 0 auto;
- border: 1px solid black;
- }
+  margin: 0 50px 0 50px;
+  width:1280px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
 .head{
-padding: 50px 50px 50px 50px;
-margin: 0;
-background-color:#445162;
-min-height: 325px;
+  padding: 50px 50px 50px 50px;
+  margin: 0;
+  background-color:#445162;
+  min-height: 325px;
 }
 
 .name{
-margin: 0;
-font-family:"Arial" ;
-font-size: 60px;
-color: #fff;
+  margin: 0;
+  font-family:"Arial" ;
+  font-size: 60px;
+  color: #fff;
 }
 .name-left{
-margin: 0; 
-float: left;
+  margin: 0; 
+  float: left;
 }
 .name-title{
-width: 435px;
-margin: 0;
-padding: 45px 0 0 35px;
+  box-sizing: border-box;
+  width: 435px;
+  margin: 0;
+  padding: 45px 0 0 35px;
 }
 .name-item{
-margin: 0;
-color:#fff; 
-list-style: none;
-font-family: "arial";
-line-height: 36px;
-font-size: 20px;
-position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  color:#fff; 
+  list-style: none;
+  font-family: "arial";
+  line-height: 36px;
+  font-size: 20px;
+  position: relative;
 }
 
 .name-item::before{
-content: "";
-display: block;
-width: 25px;
-height: 20px;
-background-image: url(../img/check-icon.png);
-background-size: cover;
-position: absolute;
-top: 8px;
-left: -32px;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 20px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAATBAMAAACXXLs2AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURQAAAP///////////////////////////////////////////7QJjekAAAALdFJOUwCfXy8P789Pr29/ZZZkgQAAAGZJREFUGNNjYIABxk0MSEB6twKCw7h79yZkqd27DZCkdm9EkRIA0iyLkaXcthogSWXvDkaS2r17qwFMisEayIiAG8i0GwIEIGZrgzkwu5iQpSCSCGcwIUuBJDci+YwJWYqBoRLGAAB36jc6axWcgAAAAABJRU5ErkJggg==);
+  background-size: cover;
+  position: absolute;
+  top: 8px;
+  left: -32px;
 }
 .head img{
- display: block;
- width: 470px; 
- min-height: 215px;
- background-color: white;
- float: right;
+  display: block;
+  width: 470px; 
+  min-height: 215px;
+  background-color: white;
+  float: right;
 }
 .main-about{
-padding:50px;
-font-family: arial;
+  padding:50px;
+  font-family: arial;
 }
 .about{
-float: left;
+  float: left;
 }
 .name-about{
-margin: 0;
-padding: 50px 0 0 0;
-color: #445162;
-font-size: 30px;
-line-height: 36px;
+  margin: 0;
+  padding: 50px 0 0 0;
+  color: #445162;
+  font-size: 30px;
+  line-height: 36px;
 
 }
 .about-txt{
-line-height: 24px;
-font-size: 16px;
-width: 655px;
+  margin:0px;
+  padding:5px;
+  line-height: 24px;
+  font-size: 16px;
+  width: 655px;
 }
 
 main video{
-float: right;
-background-color: #445162; 
-width:435px;
-min-height: 245px; 
+  float: right;
+  background-color: #445162; 
+  width:435px;
+  min-height: 245px;
+  margin: 0 0 50px 0; 
 }
 /*.name-pluses{
 text-align: center;
@@ -96,15 +101,15 @@ line-height: 36px;
 font-family:"arial" ;
 }
 .pluses-item{
-	/*width: 50%;
-	min-height: 10px;
-	list-style:none;
+/*width: 50%;
+min-height: 10px;
+list-style:none;
 }
 /*.pluses-item:nth-child(4),
 .pluses-item:nth-child(5),
 .pluses-item:nth-child(6){
 
-	float: right;
+float: right;
 }
 .pluses-item:nth-child(1),
 .pluses-item:nth-child(2),
@@ -118,24 +123,24 @@ width: 49%;
 float: left;
 }
 .pluses-title{
-	padding: 0;
-	width: 1120px;
-	column-count: 2;
-	min-height: 280px;
+padding: 0;
+width: 1120px;
+column-count: 2;
+min-height: 280px;
 }
 .pluses-title{
-	width: 540px;
-	margin: 0;
-	padding: 0 0 0 45px;
-	list-style: none;
+width: 540px;
+margin: 0;
+padding: 0 0 0 45px;
+list-style: none;
 }
 .pluses-title{}
 .pluses-item{
-	padding: 35px 0 0 0;
-	position: relative;
+padding: 35px 0 0 0;
+position: relative;
 }
 .pluses-item:nth-child(3){
-	float: right;
+float: right;
 }
 .pluses-item::before{
 content: "+";
@@ -147,211 +152,324 @@ left: -10px;
 position: absolute;
 }*/
 .pluses{
-clear: both;
-padding: 50px;
-width: 100%;
-min-height: 420px;
-font-family: "arial";
-background-color: #f5f5f5;
-margin: 0;
-box-sizing: border-box;
+  clear: both;
+  padding: 50px;
+  width: 100%;
+  min-height: 420px;
+  font-family: "arial";
+  background-color: #f5f5f5;
+  margin: 0;
+  box-sizing: border-box;
 }
 .pluses-name{
-text-align:center;
-font-size: 30px;
-line-height: 36px;
-color:  #445162;
+  margin:0px;
+  padding:10px;
+  text-align:center;
+  font-size: 30px;
+  line-height: 36px;
+  color:  #445162;
 }
 .pluses-title{
-padding: 0;
-list-style: none;
+  padding: 0;
+  list-style: none;
 }
 .pluses-title-list{
-	width: 540px;
-	margin: 0 0 40px 45px; 
-	position: relative;
+  width: 540px;
+  margin: 0 0 40px 45px; 
+  position: relative;
 }
 .pluses-title-list:before{
-content: "+";
-display: block;
-width: 32px;
-height: 32px;
-background-color: #445162;
-color: #fff;
-text-align:center;
-font-size: 28px;
-line-height: 32px;
-position: absolute;
-top: 10px;
-left: -45px;
+  content: "+";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #445162;
+  color: #fff;
+  text-align:center;
+  font-size: 28px;
+  line-height: 32px;
+  position: absolute;
+  top: 10px;
+  left: -45px;
 }
 .pluses-title-list:nth-child(1),
 .pluses-title-list:nth-child(2),
 .pluses-title-list:nth-child(3){
-	float: left;
+  float: left;
 }
 .pluses-title-list:nth-child(4),
 .pluses-title-list:nth-child(5),
 .pluses-title-list:nth-child(6){
-	float: right;
+  float: right;
 }
 .screenshot{ 
-padding: 0 50px 0 50px;
-font-family: arial;
-clear: both;
+  padding: 0 50px 0 50px;
+  font-family: arial;
+  clear: both;
 }
 /*Почему не работает после общего блока скриншот отмена обтикание
 */.screenshot:after{
-	clear: both;
+  clear: both;
 }
 .screenshot-name{
-padding: 20px 0 0 0;
-margin: 0 0 35px 0;
-font-size: 30px;
-line-height: 36px;
-text-align:center;
-color:  #445162;
+  padding: 20px 0 0 0;
+  margin: 0 0 35px 0;
+  font-size: 30px;
+  line-height: 36px;
+  text-align:center;
+  color:  #445162;
 }
 .screenshots-item{
-width: 575px;
-margin: 0 0 30px 0;
-float: left;
-box-sizing: border-box;
+  width: 575px;
+  margin: 0 0 30px 0;
+  float: left;
+  box-sizing: border-box;
 }
 .screenshots-item:nth-child(3),
 .screenshots-item:nth-child(5){
-	float: right;
+  float: right;
 }
 
 .screenshots-jpg{
-margin: 0 15px 0 0;
-display: block;
-background-color: #445161;
-float: left;
-height: 150px;
+  margin: 0 15px 0 0;
+  display: block;
+  background-color: #445161;
+  float: left;
+  height: 150px;
 }
 .screenshots-item-desk{
-font-family: arial;
+  font-family: arial;
 }
 .description{
-margin: 0 0 20px 0;
-color: #445161;
-font-size: 24px;
-line-height: 30px;
+  margin: 0 0 20px 0;
+  color: #445161;
+  font-size: 24px;
+  line-height: 30px;
 }
 .txt-screnshots{
-margin: 0;
-font-size: 16px;
-line-height: 24px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
 }
 .
 .main-reviews {
-    margin: 0 0 0 30px;
+  margin: 0 0 0 30px;
 }
 .reviews{
-	clear: both;
-	font-family: arial;
+  clear: both;
+  font-family: arial;
 }
 .reviews-name{
-margin: 0 0 30px 0;
-text-align: center;
-font-size: 30px;
-line-height: 36px;
-color: #445161;
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #445161;
 }
 .left-reviews{
-	float: left;
-	width: 49%;
+  padding: 0 0 0 25px;
+  float: left;
+  width: 49%;
 }
 .right-reviews{
-	float: right;
-	width: 49%;
+  float: right;
+  width: 49%;
 }
 .reviews-jpg{
-	padding: 15px 10px 0 0;
-	float: left;
+  background-color: #445161;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  position: absolute;
+  /* padding: 15px 0px 0 0; */
+  float: left;
 }
 .txt-reviews{
-	margin: 0;
-	width: 405px;
-    min-height: 125px;
-	background-color: #ebebeb;
-}.box-buy{
-	font-family: arial;
-	display: flex;
+  margin: 0 0 40px 100px;
+  width: 405px;
+  min-height: 125px;
+  background-color: #ebebeb;
+  position: relative;
+}
+.txt-reviews::before{
+  content: '';
+  top: 13px;
+  left: -34px;
+  position: absolute;
+  border: 15px solid transparent;
+  border-right: 19px solid #ebebeb;
+}
+.box-buy{
+  font-family: arial;
+  display: flex;
+  padding: 0 0 50px 0;
+
 }
 .buy{
-font-family: arial;
-padding: 0 140px 0 140px;
+  font-family: arial;
+  padding: 0 140px 0 140px;
 }
 .buy:after{
-clear: both;
+  clear: both;
 }
 .buy-name{
-font-size: 30px;
-line-height: 36px;
-color: #445161;
-text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #445161;
+  text-align: center;
 }
 .box-standart{
-align-self: flex-end;
-min-height: 305px;
-width: 30%;
-float: left;
-background-color: #445162;
-margin: 0 40px 0 0px;
+  border:1px solid transparent;
+  border-radius: 7px;
+  align-self: flex-end;
+  min-height: 305px;
+  width: 30%;
+  float: left;
+  background-color: #445162;
+  margin: 0 40px 0 0px;
 }
 .box-premium{
-align-self: flex-end;
-min-height: 400px;
-width: 30%;
-float: left;
-background-color: #445162;
-margin: 0;
+  border:1px solid transparent;
+  border-radius: 7px;
+  align-self: flex-end;
+  min-height: 400px;
+  width: 30%;
+  float: left;
+  background-color: #445162;
+  margin: 0;
 }
 .box-lux{
-align-self: flex-end;
-min-height: 500px;
-width: 30%;
-float: left;
-background-color: #445162;
-margin: 0 0 0 40px;
+  border:1px solid transparent;
+  border-radius: 7px;
+  align-self: flex-end;
+  min-height: 500px;
+  width: 30%;
+  float: left;
+  background-color: #445162;
+  margin: 0 0 0 40px;
 }
 /*почему здесь я хочу в одном месте прописать два из трех работает подскажите*/
 .box-standart-name,
 .box-premium-name,
 .box-lux-name{
-padding: 25px 0 25px 0; 
-margin: 0;
-font-size: 24px;
-line-height: 30px;
-color: #fff;
-text-align:center;
+  padding: 25px 0 25px 0; 
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  text-align:center;
 }
 .box-price{
-padding: 30px 0 0 0;
-margin: 0;
-font-size:40px;
-line-height: 30px; 
-color: #445162;
-min-height: 65px;
-text-align: center;
-background-color: #fff;
-border: 1px solid #445162; ;
+  display: block;
+  padding: 30px 0 0 0;
+  margin: 0;
+  font-size:40px;
+  line-height: 30px; 
+  color: #445162;
+  min-height: 65px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #445162; ;
 }
 .box-title{
-	color: #fff;
-	font-size: 14px;
-	line-height: 24px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
 }
+
 .button-buy{
-color: #445162;
-font-family: arial;
-font-size:18px;
-line-height: 18px;
-margin: 20px;
-text-transform: uppercase;
-background-color: #fff;
-width: 260px;
-min-height: 40px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: #445162;
+  font-family: arial;
+  font-size:18px;
+  line-height: 18px;
+  margin: 20px;
+  text-transform: uppercase;
+  background-color: #fff;
+  width: 260px;
+  min-height: 40px;
+}
+.button-buy:hover,
+.button-buy:focus
+{
+  background-color: #C7C7C7;
+}
+.button-buy:active{
+  background-color: #9F9F9F;
+}
+.contacts{
+  font-family: arial;
+  min-height: 510px;
+  padding: 50px;
+  background-color: #445162;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contacts-name{
+  display: block;
+  width: 100%;
+  /* flex-wrap: nowrap; */
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+}
+.form-contacts{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 500px;
+   margin: 0 46px 0 0;
+}
+
+.your-name,
+.your-email,
+.message-contact{
+  width: 100%;
+  margin:0 0 20px 0;
+  resize: none;
+  border:2px solid transparent;
+  border-radius: 5px;
+}
+.your-name:hover,
+.your-name:focus,
+.your-email:hover,
+.your-email:focus,
+.message-contact:hover,
+.message-contact:focus{
+  background-color: #D4D4D4;
+}
+.button-send{
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: arial;
+  width: 140px;
+  min-height: 40px;
+}
+.button-send:hover,
+.button-send:focus{
+  background-color: #C7C7C7;
+}
+.button-send:active{
+  background-color: #9F9F9F;
+}
+.footer-social{
+  background-color: white;
+  width: 240px;
+  height: 300px;
+}
+.copyright{
+  font-family: arial;
+  background-color:#F5F5F5; 
+}
+.copyright-txt{
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
 }
