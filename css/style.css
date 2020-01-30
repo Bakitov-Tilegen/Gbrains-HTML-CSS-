@@ -28,7 +28,7 @@ body{
 }
 .name-title{
   box-sizing: border-box;
-  width: 435px;
+  width: 460px;
   margin: 0;
   padding: 45px 0 0 35px;
 }
@@ -298,6 +298,17 @@ position: absolute;
   border: 15px solid transparent;
   border-right: 19px solid #ebebeb;
 }
+.link-user{
+  outline: none;
+  text-decoration: none;
+}
+.link-user:hover{
+  text-decoration: underline; 
+}
+.link-user:focus{
+  outline: 1px solid #537BA9; 
+  text-decoration: underline; 
+}
 .box-buy{
   font-family: arial;
   display: flex;
@@ -377,6 +388,7 @@ position: absolute;
 }
 
 .button-buy{
+  outline: none;
   border: 2px solid transparent;
   border-radius: 8px;
   color: #445162;
@@ -389,10 +401,14 @@ position: absolute;
   width: 260px;
   min-height: 40px;
 }
+.button-buy:focus{
+  outline: 1px solid #537BA9;
+}
 .button-buy:hover,
 .button-buy:focus
 {
   background-color: #C7C7C7;
+  
 }
 .button-buy:active{
   background-color: #9F9F9F;
@@ -411,7 +427,7 @@ position: absolute;
   display: block;
   width: 100%;
   /* flex-wrap: nowrap; */
-  margin: 0;
+  margin: 0 0 25px 0;
   text-align: center;
   font-size: 30px;
   line-height: 36px;
@@ -428,11 +444,18 @@ position: absolute;
 .your-name,
 .your-email,
 .message-contact{
+  padding: 10px;
+  outline: none;
   width: 100%;
   margin:0 0 20px 0;
   resize: none;
   border:2px solid transparent;
   border-radius: 5px;
+}
+.your-name:focus,
+.your-email:focus,
+.message-contact:focus{
+  outline: 1px solid #537BA9;
 }
 .your-name:hover,
 .your-name:focus,
@@ -443,6 +466,8 @@ position: absolute;
   background-color: #D4D4D4;
 }
 .button-send{
+  background-color: #fff;
+  outline: none;
   border: 2px solid transparent;
   border-radius: 8px;
   font-size: 16px;
@@ -450,6 +475,9 @@ position: absolute;
   font-family: arial;
   width: 140px;
   min-height: 40px;
+}
+.button-send:focus{
+  outline: 1px solid #537BA9;
 }
 .button-send:hover,
 .button-send:focus{
@@ -459,9 +487,48 @@ position: absolute;
   background-color: #9F9F9F;
 }
 .footer-social{
-  background-color: white;
   width: 240px;
   height: 300px;
+}
+.social-item{
+  display: flex;
+  flex-direction: column;
+}
+.social-item a{
+  text-decoration: none;
+  color: #ffffff;
+  margin:0 0 5px 0px;
+}
+.skype-svg{
+	fill: #fff;
+}
+.social-sprite{
+  padding: 35px 0 0 0;
+}
+.sprite{
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+}
+.twitter{
+  background-image: url(../img/social-buttons.png);
+  background-position: -1px 0px;
+}
+.facebook{
+  background-image: url(../img/social-buttons.png);
+  background-position: -50px 0;
+}	
+.instagram{
+  background-image: url(../img/social-buttons.png);
+  background-position: -99px 0px;
+}
+.google{
+  background-image: url(../img/social-buttons.png);
+  background-position: -149px 0px;
+}
+.youtube{
+  background-image: url(../img/social-buttons.png);
+  background-position: -198px 0px;
 }
 .copyright{
   font-family: arial;
