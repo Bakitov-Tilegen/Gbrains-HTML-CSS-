@@ -77,8 +77,7 @@ body{
 
 }
 .about-txt{
-  margin:0px;
-  padding:5px;
+  margin:0 0 5px 0px;
   line-height: 24px;
   font-size: 16px;
   width: 655px;
@@ -91,66 +90,6 @@ main video{
   min-height: 245px;
   margin: 0 0 50px 0; 
 }
-/*.name-pluses{
-text-align: center;
-margin:0;
-padding: 50px 0 0 0;
-color: #445162;
-font-size: 30px;
-line-height: 36px;
-font-family:"arial" ;
-}
-.pluses-item{
-/*width: 50%;
-min-height: 10px;
-list-style:none;
-}
-/*.pluses-item:nth-child(4),
-.pluses-item:nth-child(5),
-.pluses-item:nth-child(6){
-
-float: right;
-}
-.pluses-item:nth-child(1),
-.pluses-item:nth-child(2),
-.pluses-item:nth-child(3){
-float: left;
-margin:35px 0 0 90px;
-}
-.pluses-title li{
-display: block;
-width: 49%;
-float: left;
-}
-.pluses-title{
-padding: 0;
-width: 1120px;
-column-count: 2;
-min-height: 280px;
-}
-.pluses-title{
-width: 540px;
-margin: 0;
-padding: 0 0 0 45px;
-list-style: none;
-}
-.pluses-title{}
-.pluses-item{
-padding: 35px 0 0 0;
-position: relative;
-}
-.pluses-item:nth-child(3){
-float: right;
-}
-.pluses-item::before{
-content: "+";
-background-color: #445162;;
-width:10px;
-height:10px;
-top: 0px;
-left: -10px;
-position: absolute;
-}*/
 .pluses{
   clear: both;
   padding: 50px;
@@ -162,8 +101,7 @@ position: absolute;
   box-sizing: border-box;
 }
 .pluses-name{
-  margin:0px;
-  padding:10px;
+  margin: 0 0 10px 0px;
   text-align:center;
   font-size: 30px;
   line-height: 36px;
@@ -202,17 +140,18 @@ position: absolute;
 .pluses-title-list:nth-child(6){
   float: right;
 }
+.pluses-title-list:after{
+  clear: both;
+}
 .screenshot{ 
   padding: 0 50px 0 50px;
   font-family: arial;
-  clear: both;
 }
 /*Почему не работает после общего блока скриншот отмена обтикание
 */.screenshot:after{
   clear: both;
 }
 .screenshot-name{
-  padding: 20px 0 0 0;
   margin: 0 0 35px 0;
   font-size: 30px;
   line-height: 36px;
@@ -229,7 +168,9 @@ position: absolute;
 .screenshots-item:nth-child(5){
   float: right;
 }
-
+.screenshots-item:after{
+  clear: both;
+}
 .screenshots-jpg{
   margin: 0 15px 0 0;
   display: block;
@@ -251,12 +192,11 @@ position: absolute;
   font-size: 16px;
   line-height: 24px;
 }
-.
+
 .main-reviews {
   margin: 0 0 0 30px;
 }
 .reviews{
-  clear: both;
   font-family: arial;
 }
 .reviews-name{
@@ -274,6 +214,10 @@ position: absolute;
 .right-reviews{
   float: right;
   width: 49%;
+}
+.right-reviews:after,
+.left-reviews:after{
+  clear: both;
 }
 .reviews-jpg{
   background-color: #445161;
@@ -408,7 +352,7 @@ position: absolute;
 .button-buy:focus
 {
   background-color: #C7C7C7;
-  
+
 }
 .button-buy:active{
   background-color: #9F9F9F;
@@ -434,11 +378,11 @@ position: absolute;
   color: #fff;
 }
 .form-contacts{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   width: 500px;
-   margin: 0 46px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+  margin: 0 46px 0 0;
 }
 
 .your-name,
@@ -466,6 +410,7 @@ position: absolute;
   background-color: #D4D4D4;
 }
 .button-send{
+  text-transform: uppercase;
   background-color: #fff;
   outline: none;
   border: 2px solid transparent;
@@ -497,10 +442,51 @@ position: absolute;
 .social-item a{
   text-decoration: none;
   color: #ffffff;
-  margin:0 0 5px 0px;
+  margin:0 0 5px 10px;
 }
 .skype-svg{
-	fill: #fff;
+  fill: #fff;
+  width:25px; 
+  height:25px;
+}
+.skype-svg:hover,
+.skype-svg:focus{
+  fill: #00BEF8;
+  width:25px; 
+  height:25px;
+}
+.icq-svg{
+  fill: #fff;
+  width: 25px;
+  height: 25px;
+}
+.icq-svg:hover,
+.icq-svg:focus{
+  fill: #4CAF50;
+  width: 25px;
+  height: 25px;
+}
+.at-svg{
+  fill: #fff;
+  width: 25px;
+  height: 25px;
+}
+.at-svg:hover,
+.at-svg:focus{
+  fill: #ECA746;
+  width: 25px;
+  height: 25px;
+}
+.call-svg{
+  fill: #fff;
+  width: 25px;
+  height: 25px;
+}
+.call-svg:hover,
+.call-svg:focus{
+  fill: #168DE2;
+  width: 25px;
+  height: 25px;
 }
 .social-sprite{
   padding: 35px 0 0 0;
@@ -517,7 +503,7 @@ position: absolute;
 .facebook{
   background-image: url(../img/social-buttons.png);
   background-position: -50px 0;
-}	
+} 
 .instagram{
   background-image: url(../img/social-buttons.png);
   background-position: -99px 0px;
