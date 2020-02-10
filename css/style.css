@@ -64,13 +64,20 @@ body{
 .main-about{
   padding:50px;
   font-family: arial;
+  box-sizing: border-box;
+}
+.main-about:after{
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
 }
 .about{
   float: left;
 }
 .name-about{
-  margin: 0;
-  padding: 50px 0 0 0;
+  margin: 0 0 20px 0;
+  padding: 0;
   color: #445162;
   font-size: 30px;
   line-height: 36px;
@@ -88,7 +95,7 @@ main video{
   background-color: #445162; 
   width:435px;
   min-height: 245px;
-  margin: 0 0 50px 0; 
+  margin: 0; 
 }
 .pluses{
   clear: both;
@@ -144,12 +151,15 @@ main video{
   clear: both;
 }
 .screenshot{ 
-  padding: 0 50px 0 50px;
+  padding:50px;
+  box-sizing: border-box;
   font-family: arial;
 }
-/*Почему не работает после общего блока скриншот отмена обтикание
-*/.screenshot:after{
+.screenshot:after{
   clear: both;
+  content: "";
+  display: block;
+  width: 100%;
 }
 .screenshot-name{
   margin: 0 0 35px 0;
@@ -197,7 +207,15 @@ main video{
   margin: 0 0 0 30px;
 }
 .reviews{
+  padding: 50px;
   font-family: arial;
+  box-sizing: border-box;
+}
+.reviews:after{
+  display: block;
+  clear: both;
+  content: "";
+  width: 100%;
 }
 .reviews-name{
   margin: 0 0 30px 0;
@@ -207,7 +225,7 @@ main video{
   color: #445161;
 }
 .left-reviews{
-  padding: 0 0 0 25px;
+ /*  padding: 0 0 0 25px; */
   float: left;
   width: 49%;
 }
@@ -250,29 +268,33 @@ main video{
   text-decoration: underline; 
 }
 .link-user:focus{
-  outline: 1px solid #537BA9; 
+  /* outline: 1px solid #537BA9; */ 
   text-decoration: underline; 
 }
 .box-buy{
   font-family: arial;
   display: flex;
-  padding: 0 0 50px 0;
+  /* padding: 0; */
 
 }
 .buy{
   font-family: arial;
-  padding: 0 140px 0 140px;
+  padding: 50px;
+  box-sizing: border-box;
 }
 .buy:after{
   clear: both;
 }
 .buy-name{
+  margin: 0 0 20px 0;
   font-size: 30px;
   line-height: 36px;
   color: #445161;
   text-align: center;
 }
 .box-standart{
+  padding: 0 10px 0 0;/* Здесь я поставил как вы просили но здесь лучшее не будет padding 0 уст? */ 
+  box-sizing: border-box;
   border:1px solid transparent;
   border-radius: 7px;
   align-self: flex-end;
@@ -281,7 +303,7 @@ main video{
   float: left;
   background-color: #445162;
   margin: 0 40px 0 0px;
-}
+} 
 .box-premium{
   border:1px solid transparent;
   border-radius: 7px;
@@ -326,12 +348,14 @@ main video{
   border: 1px solid #445162; ;
 }
 .box-title{
+  margin: 0 0 10px 0;
   color: #fff;
   font-size: 14px;
   line-height: 24px;
 }
 
 .button-buy{
+  display: block;
   outline: none;
   border: 2px solid transparent;
   border-radius: 8px;
@@ -339,14 +363,14 @@ main video{
   font-family: arial;
   font-size:18px;
   line-height: 18px;
-  margin: 20px;
+  margin: 0 auto 0 auto;
   text-transform: uppercase;
   background-color: #fff;
   width: 260px;
   min-height: 40px;
 }
 .button-buy:focus{
-  outline: 1px solid #537BA9;
+  /* outline: 1px solid #537BA9; */
 }
 .button-buy:hover,
 .button-buy:focus
@@ -399,7 +423,7 @@ main video{
 .your-name:focus,
 .your-email:focus,
 .message-contact:focus{
-  outline: 1px solid #537BA9;
+  /* outline: 1px solid #537BA9; */
 }
 .your-name:hover,
 .your-name:focus,
@@ -422,7 +446,7 @@ main video{
   min-height: 40px;
 }
 .button-send:focus{
-  outline: 1px solid #537BA9;
+  /* outline: 1px solid #537BA9; */
 }
 .button-send:hover,
 .button-send:focus{
@@ -443,6 +467,10 @@ main video{
   text-decoration: none;
   color: #ffffff;
   margin:0 0 5px 10px;
+}
+.social-item a:focus{
+ color: #5D6E7C;
+ outline: none;
 }
 .skype-svg{
   fill: #fff;
